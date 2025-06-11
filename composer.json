@@ -1,6 +1,6 @@
 {
     "name": "credopay/paymentgateway",
-    "description": "A PHP library for the CredoPay payment gateway.",
+    "description": "A PHP library for integrating with the CredoPay payment gateway to process online payments.",
     "type": "library",
     "license": "MIT",
     "autoload": {
@@ -20,5 +20,12 @@
             "email": "support@credopay.com"
         }
     ],
-    "minimum-stability": "stable"
+    "keywords": ["payment", "gateway", "credopay"],
+    "support": {
+        "email": "support@credopay.com",
+        "issues": "https://github.com/credopay/paymentgateway/issues"
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
 }
