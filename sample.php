@@ -1,8 +1,5 @@
 <?php
 require_once 'vendor/autoload.php';
-require_once 'src/Config.php';
-require_once 'src/CredoPayPaymentGateway.php';
-require_once 'src/resources/OrderAPI.php';
 
 use CredoPay\CredoPayPaymentGateway;
 use CredoPay\Resources\OrderAPI;
@@ -10,8 +7,8 @@ use CredoPay\Resources\OrderAPI;
 try {
 
     // Initialize the payment gateway with your client credentials
-    $clientId = '67a34eb6df8f95fd82f0fcd7'; // Replace with your actual client ID
-    $clientSecret = 'rJ22xzItJd0d908MeGPBaFJ7i'; // Replace with your actual client secret
+    $clientId = '67a34XXXXXXXXXXXXXX0fcd7'; // Replace with your actual client ID
+    $clientSecret = 'rJ22XXXXXXXXXXXXXXPBaFJ7i'; // Replace with your actual client secret
 
     $gateway = new CredoPayPaymentGateway($clientId, $clientSecret);
 
@@ -25,8 +22,8 @@ try {
         'currency' => 'INR',
         'description' => 'Test Payment',
         'customerFields' => [
-            'name' => 'Madhan R',
-            'email' => 'madhan.k@credopay.in',
+            'name' => 'Joe User',
+            'email' => 'joe@example.net',
             'phone' => '1234567890'
         ],
         'uiMode' => 'checkout',
