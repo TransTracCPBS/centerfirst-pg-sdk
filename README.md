@@ -21,7 +21,7 @@ composer require credopay/paymentgateway
 
 ## Requirements 
 
-    - PHP 7.4 or higher
+    - PHP 8.2 or higher
     - Composer
     - cURL extension enabled
     - CredoPay API credentials (Client ID and Client Secret)
